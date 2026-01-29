@@ -8,6 +8,10 @@
 
 config_version=4
 
+[addons]
+
+data_manager/folder_settings="[{\"folder\":\"meshes\",\"header\":\"\",\"name\":\"Meshes\",\"type\":\"Mesh\"}]"
+
 [application]
 
 config/name="Data Manager"

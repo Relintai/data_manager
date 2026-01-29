@@ -104,7 +104,7 @@ func _get_property_list() -> Array:
 			"name": "save",
 			"type": TYPE_NIL,
 			"hint": PROPERTY_HINT_BUTTON,
-			"hint_string": "save_to_project_settings",
+			"hint_string": "_save_to_project_settings_button_pressed",
 		})
 	
 #	props.append({
@@ -218,6 +218,9 @@ func set_from_json(data : String) -> void:
 		s.type = dict["type"]
 		
 		folders.push_back(s)
+
+func _save_to_project_settings_button_pressed(property : StringName) -> void:
+	save_to_project_settings()
 
 func save_to_project_settings() -> void:
 	ProjectSettings.set("addons/data_manager/folder_settings", get_as_json())
