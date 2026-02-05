@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[addons]
+
+data_manager/folder_settings="[{\"folder\":\"meshes\",\"header\":\"\",\"name\":\"Meshes\",\"type\":\"Mesh\"}]"
+
+[application]
+
+config/name="Data Manager"
+config/icon="res://icon.png"
+
+[editor]
+
+scene_naming=2
+default_language=2
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/data_manager/plugin.cfg" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
